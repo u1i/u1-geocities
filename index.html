@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Uli's Corner of the Web!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #000000;
+            background-image: 
+                radial-gradient(white 1px, transparent 1px),
+                radial-gradient(white 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: 0 0, 25px 25px;
+            color: #33FF33;
+            font-family: "Comic Sans MS", cursive;
+            margin: 20px;
+            line-height: 1.4;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            border: 5px ridge #FF00FF;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #FF00FF;
+            text-shadow: 2px 2px #00FF00;
+            font-family: "Comic Sans MS", cursive;
+        }
+        .welcome {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .construction {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .bio {
+            background: #000066;
+            border: 3px double #00FF00;
+            padding: 15px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        marquee {
+            background: #FF00FF;
+            color: #FFFF00;
+            padding: 5px;
+        }
+        .counter {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .webring {
+            text-align: center;
+            margin: 20px 0;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+        blink {
+            animation: blinker 1s step-start infinite;
+        }
+        .geocities-logo {
+            font-family: "Comic Sans MS", cursive;
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            padding: 5px;
+            margin-right: 15px;
+            float: left;
+        }
+        .geocities-nav {
+            margin-bottom: 20px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border: 2px solid #FF00FF;
+        }
+        .breadcrumbs {
+            float: left;
+            font-size: 14px;
+            color: #33FF33;
+            font-family: "Comic Sans MS", cursive;
+            padding-top: 8px;
+        }
+        .breadcrumbs a {
+            color: #33FF33;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            color: #FF00FF;
+        }
+        #mobile-warning {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #000080;
+            color: #ffffff;
+            z-index: 9999;
+            padding: 20px;
+            font-family: "Comic Sans MS", cursive;
+        }
+        .warning-window {
+            background: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+            max-width: 300px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        .warning-title {
+            background: #000080;
+            color: #ffffff;
+            padding: 4px;
+            font-weight: bold;
+        }
+        .warning-content {
+            padding: 15px;
+            color: #000000;
+            text-align: center;
+        }
+        .warning-button {
+            display: inline-block;
+            background: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+            padding: 4px 12px;
+            margin: 10px;
+            color: #000000;
+            cursor: pointer;
+            font-family: "Comic Sans MS", cursive;
+        }
+        .warning-button:active {
+            border-top: 2px solid #808080;
+            border-left: 2px solid #808080;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="mobile-warning">
+        <marquee scrollamount="5" behavior="alternate" style="background: #ff0000; color: #ffff00; font-weight: bold; padding: 10px;">
+            STOP! MOBILE DEVICE DETECTED! 
+        </marquee>
+        
+        <div class="warning-window">
+            <div class="warning-title">System Requirements Not Met</div>
+            <div class="warning-content">
+                <p>This website requires:</p>
+                <p style="text-align: left; margin-left: 40px;">
+                    IBM Compatible PC<br>
+                    640x480 or higher<br>
+                    256 Colors<br>
+                    Netscape 3.0
+                </p>
+                <marquee scrollamount="3">No phones in 1996!</marquee>
+                <div class="warning-button" onclick="document.getElementById('mobile-warning').style.display='none';">
+                    OK
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            Please view on a REAL computer! 
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="geocities-nav">
+            <div class="geocities-logo">GeoCities</div>
+            <div class="breadcrumbs">
+                <a href="#">GeoCities</a> &gt; 
+                <a href="#">Paris</a> &gt; 
+                <a href="#">Rue</a> &gt; 
+                <span>3556</span>
+            </div>
+        </div>
+        <marquee scrollamount="5" behavior="alternate">Welcome to My Personal Homepage!</marquee>
+        
+        <h1><blink> Uli's Digital Realm </blink></h1>
+        
+        <div class="welcome">
+            <img src="images/construction.gif" alt="Under Construction" width="88">
+            <br>
+            This site is always under construction! 
+        </div>
+
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>Uli Hitzel is a digital technologist passionate about artificial intelligence, automation, and emerging technologies. He helps established companies at crucial growth stages to build and lead cross-functional teams tasked with driving innovation and business transformation.</p>
+            <p>As the founder of Electric Minds, a non-profit AI initiative, Uli leads efforts to solve problems that can only be tackled with the help of AI and diverse collaborative ecosystems.</p>
+            <p>Over the course of his career, Uli has worked on projects around the world with companies including:</p>
+            <ul>
+                <li>🏢 Dyson</li>
+                <li>🌐 Yahoo</li>
+                <li>💻 Microsoft</li>
+                <li>🔵 IBM</li>
+                <li>🎩 Red Hat</li>
+                <li>🏦 Barclays Capital</li>
+                <li>📞 BT</li>
+            </ul>
+            <p>Since 2020, he has been a Fellow at the National University of Singapore.</p>
+            <p><img src="images/ie.gif" alt="Internet Explorer" style="vertical-align: middle; margin-right: 5px;">This page is best viewed in <blink>Internet Explorer</blink> at 800x600 resolution!</p>
+        </div>
+
+        <div class="counter" style="background: #000066; border: 3px double #00FF00; padding: 15px; margin: 20px 0;">
+            <p>You are visitor number:</p>
+            <img src="images/counter.gif" alt="Visitor Counter">
+        </div>
+
+        <div class="webring">
+            <img src="images/webring.gif" alt="Web Ring">
+            <img src="images/netscape.gif" alt="Netscape Now!" width="88" height="31">
+            <br>
+            <font color="#FFFF00">Proud member of the Tech Enthusiasts Web Ring!</font>
+        </div>
+
+        <div class="email">
+            <a href="mailto:uli@example.com">
+                <img src="images/email.gif" alt="Email Me!" width="88" height="31">
+            </a>
+            <br>
+            Drop me a line! 
+        </div>
+
+        <marquee direction="up" scrollamount="2" behavior="scroll" height="60px">
+            <font color="#FF00FF">Thanks for visiting!</font><br>
+            <font color="#00FF00">Last updated: UNDER CONSTRUCTION</font><br>
+            <font color="#FFFF00">Best viewed in Netscape Navigator!</font>
+        </marquee>
+    </div>
+
+    <!-- This JavaScript creates that authentic 90s cursor trail effect -->
+    <script>
+        var colours=new Array("#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF"); // rainbow colors
+        var sparkles=50; // number of sparkles
+
+        var x=ox=400;
+        var y=oy=300;
+        var swide=800;
+        var shigh=600;
+        var sleft=sdown=0;
+        var tiny=new Array();
+        var star=new Array();
+        var starv=new Array();
+        var starx=new Array();
+        var stary=new Array();
+        var tinyx=new Array();
+        var tinyy=new Array();
+        var tinyv=new Array();
+
+        window.onload=function() { if (document.getElementById) {
+            var i, rats, rlef, rdow;
+            for (var i=0; i<sparkles; i++) {
+                var rats=createDiv(3, 3);
+                rats.style.visibility="hidden";
+                document.body.appendChild(tiny[i]=rats);
+                starv[i]=0;
+                tinyv[i]=0;
+                var rats=createDiv(5, 5);
+                rats.style.backgroundColor="transparent";
+                rats.style.visibility="hidden";
+                var rlef=createDiv(1, 5);
+                var rdow=createDiv(5, 1);
+                rats.appendChild(rlef);
+                rats.appendChild(rdow);
+                rlef.style.top="2px";
+                rlef.style.left="0px";
+                rdow.style.top="0px";
+                rdow.style.left="2px";
+                document.body.appendChild(star[i]=rats);
+            }
+            set_width();
+            sparkle();
+        }}
+
+        function sparkle() {
+            var c;
+            if (x!=ox || y!=oy) {
+                ox=x;
+                oy=y;
+                for (c=0; c<sparkles; c++) if (!starv[c]) {
+                    star[c].style.left=(starx[c]=x)+"px";
+                    star[c].style.top=(stary[c]=y)+"px";
+                    star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+                    star[c].style.visibility="visible";
+                    starv[c]=50;
+                    break;
+                }
+            }
+            for (c=0; c<sparkles; c++) {
+                if (starv[c]) update_star(c);
+                if (tinyv[c]) update_tiny(c);
+            }
+            setTimeout("sparkle()", 40);
+        }
+
+        function update_star(i) {
+            if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+            if (starv[i]) {
+                stary[i]+=1+Math.random()*3;
+                if (stary[i]<shigh+sdown) {
+                    star[i].style.top=stary[i]+"px";
+                    starx[i]+=(i%5-2)/5;
+                    star[i].style.left=starx[i]+"px";
+                }
+                else {
+                    star[i].style.visibility="hidden";
+                    starv[i]=0;
+                    return;
+                }
+            }
+            else {
+                tinyv[i]=50;
+                tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+                tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+                tiny[i].style.width="2px";
+                tiny[i].style.height="2px";
+                star[i].style.visibility="hidden";
+                tiny[i].style.visibility="visible"
+            }
+        }
+
+        function update_tiny(i) {
+            if (--tinyv[i]==25) {
+                tiny[i].style.width="1px";
+                tiny[i].style.height="1px";
+            }
+            if (tinyv[i]) {
+                tinyy[i]+=1+Math.random()*3;
+                if (tinyy[i]<shigh+sdown) {
+                    tiny[i].style.top=tinyy[i]+"px";
+                    tinyx[i]+=(i%5-2)/5;
+                    tiny[i].style.left=tinyx[i]+"px";
+                }
+                else {
+                    tiny[i].style.visibility="hidden";
+                    tinyv[i]=0;
+                    return;
+                }
+            }
+            else tiny[i].style.visibility="hidden";
+        }
+
+        document.onmousemove=mouse;
+        function mouse(e) {
+            set_scroll();
+            y=(e)?e.pageY:event.y+sdown;
+            x=(e)?e.pageX:event.x+sleft;
+        }
+
+        function set_scroll() {
+            if (typeof(self.pageYOffset)=="number") {
+                sdown=self.pageYOffset;
+                sleft=self.pageXOffset;
+            }
+            else if (document.body.scrollTop || document.body.scrollLeft) {
+                sdown=document.body.scrollTop;
+                sleft=document.body.scrollLeft;
+            }
+            else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+                sleft=document.documentElement.scrollLeft;
+                sdown=document.documentElement.scrollTop;
+            }
+            else {
+                sdown=0;
+                sleft=0;
+            }
+        }
+
+        function createDiv(height, width) {
+            var div=document.createElement("div");
+            div.style.position="absolute";
+            div.style.height=height+"px";
+            div.style.width=width+"px";
+            div.style.overflow="hidden";
+            div.style.backgroundColor=colours[Math.floor(Math.random()*colours.length)];
+            return (div);
+        }
+
+        function set_width() {
+            var sw_min=999999;
+            var sh_min=999999;
+            if (document.documentElement && document.documentElement.clientWidth) {
+                if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+                if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+            }
+            if (typeof(self.innerWidth)!="undefined" && self.innerWidth) {
+                if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+                if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+            }
+            if (document.body.clientWidth) {
+                if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+                if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+            }
+            if (sw_min==999999 || sh_min==999999) {
+                sw_min=800;
+                sh_min=600;
+            }
+            swide=sw_min;
+            shigh=sh_min;
+        }
+    </script>
+
+    <script>
+        // Mobile detection
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                || window.innerWidth <= 768;
+        }
+
+        // Show warning on mobile
+        if (isMobile()) {
+            document.getElementById('mobile-warning').style.display = 'block';
+            document.querySelector('.container').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
